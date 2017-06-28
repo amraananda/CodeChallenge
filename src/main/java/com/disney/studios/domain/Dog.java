@@ -8,6 +8,10 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+<<<<<<< HEAD
+=======
+import javax.persistence.Transient;
+>>>>>>> 283ef9010e09306886ed9f6c4ebd086bf1ee58d5
 
 @Entity
 public class Dog implements Serializable {
@@ -23,6 +27,15 @@ public class Dog implements Serializable {
 	@Enumerated(EnumType.STRING)
 	private Breed breed;
 	
+<<<<<<< HEAD
+=======
+	@Transient
+	private Long upCount;
+	
+	@Transient
+	private Long downCount;
+
+>>>>>>> 283ef9010e09306886ed9f6c4ebd086bf1ee58d5
 	public Long getId() {
 		return id;
 	}
@@ -46,6 +59,25 @@ public class Dog implements Serializable {
 	public void setBreed(Breed breed) {
 		this.breed = breed;
 	}
+<<<<<<< HEAD
+=======
+
+	public Long getUpCount() {
+		return upCount;
+	}
+
+	public void setUpCount(Long upCount) {
+		this.upCount = upCount;
+	}
+
+	public Long getDownCount() {
+		return downCount;
+	}
+
+	public void setDownCount(Long downCount) {
+		this.downCount = downCount;
+	}
+>>>>>>> 283ef9010e09306886ed9f6c4ebd086bf1ee58d5
 	
 
 }
